@@ -155,6 +155,7 @@ Edit `rules.json` to add your own plugin-to-project mappings:
 
 ## Community
 
+- Website: https://dp.asoftmap.com
 - Email: lvfei99999@gmail.com
 - GitHub: https://github.com/SoftmapCEO/DynamicPlugins
 
