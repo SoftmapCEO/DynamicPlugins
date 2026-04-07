@@ -156,16 +156,27 @@ Edit `rules.json` to add your own plugin-to-project mappings:
 ## Community
 
 - Email: lvfei99999@gmail.com
-- WeChat Group: AllAI
-- Telegram Group: Scan QR on [website](https://softmapceo.github.io/DynamicPlugins)
 - GitHub: https://github.com/SoftmapCEO/DynamicPlugins
+
+### WeChat Group: AllAI
+
+<img src="assets/wechat.jpg" width="250" alt="WeChat Group: AllAI">
+
+### Telegram Group
+
+<img src="assets/telegram.png" width="250" alt="Telegram Group">
 
 ## Support This Project
 
 DynamicPlugins is free and open-source. If it saves you time and money, consider supporting:
 
-- **PayPal**: https://www.paypal.me/softmap
-- **Alipay**: Scan QR on [website](https://softmapceo.github.io/DynamicPlugins)
+### PayPal
+
+https://www.paypal.me/softmap
+
+### Alipay
+
+<img src="assets/alipay.jpg" width="250" alt="Alipay QR Code">
 
 ## License
 
