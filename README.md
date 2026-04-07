@@ -2,7 +2,7 @@
 
 **The World's First Dynamic Plugin System for AI CLI**
 
-> Make Great Things Happen Today.
+> Build Greatness Today.
 
 Auto enable/disable AI CLI plugins per project context. Save **74%** plugin tokens -- **$192/year** per user ($200/mo subscription), **11.1 billion** tokens freed per user annually.
 
