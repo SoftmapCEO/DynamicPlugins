@@ -1,0 +1,240 @@
+{
+  "_comment": "插件动态加载规则。always_on 始终启用；conditional 按项目内容自动匹配启用。",
+  "always_on": [
+    "superpowers",
+    "context7",
+    "github",
+    "commit-commands",
+    "pr-review-toolkit",
+    "code-review",
+    "code-simplifier",
+    "feature-dev",
+    "claude-code-setup",
+    "claude-md-management",
+    "security-guidance",
+    "skill-creator",
+    "plugin-dev",
+    "agent-sdk-dev",
+    "mcp-server-dev",
+    "playground",
+    "serena"
+  ],
+  "conditional": [
+    {
+      "plugin": "typescript-lsp",
+      "file_extensions": [".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs"],
+      "config_files": ["tsconfig.json", "package.json", "jsconfig.json"]
+    },
+    {
+      "plugin": "pyright-lsp",
+      "file_extensions": [".py", ".pyi"],
+      "config_files": ["requirements.txt", "setup.py", "pyproject.toml", "Pipfile", "setup.cfg"]
+    },
+    {
+      "plugin": "swift-lsp",
+      "file_extensions": [".swift"],
+      "config_files": ["Package.swift", "*.xcodeproj", "*.xcworkspace"]
+    },
+    {
+      "plugin": "clangd-lsp",
+      "file_extensions": [".c", ".cpp", ".cc", ".cxx", ".h", ".hpp", ".m", ".mm"],
+      "config_files": ["CMakeLists.txt", "Makefile", ".clangd", "compile_commands.json"]
+    },
+    {
+      "plugin": "gopls-lsp",
+      "file_extensions": [".go"],
+      "config_files": ["go.mod", "go.sum"]
+    },
+    {
+      "plugin": "rust-analyzer-lsp",
+      "file_extensions": [".rs"],
+      "config_files": ["Cargo.toml", "Cargo.lock"]
+    },
+    {
+      "plugin": "jdtls-lsp",
+      "file_extensions": [".java"],
+      "config_files": ["pom.xml", "build.gradle", "build.gradle.kts", ".classpath"]
+    },
+    {
+      "plugin": "kotlin-lsp",
+      "file_extensions": [".kt", ".kts"],
+      "config_files": ["build.gradle.kts"]
+    },
+    {
+      "plugin": "csharp-lsp",
+      "file_extensions": [".cs"],
+      "config_files": ["*.csproj", "*.sln"]
+    },
+    {
+      "plugin": "ruby-lsp",
+      "file_extensions": [".rb", ".rake"],
+      "config_files": ["Gemfile", "Rakefile", "*.gemspec"]
+    },
+    {
+      "plugin": "php-lsp",
+      "file_extensions": [".php"],
+      "config_files": ["composer.json", "composer.lock"]
+    },
+    {
+      "plugin": "lua-lsp",
+      "file_extensions": [".lua"],
+      "config_files": [".luarc.json", ".luacheckrc"]
+    },
+    {
+      "plugin": "elixir-ls-lsp",
+      "file_extensions": [".ex", ".exs"],
+      "config_files": ["mix.exs"]
+    },
+    {
+      "plugin": "playwright",
+      "config_files": ["playwright.config.ts", "playwright.config.js"],
+      "package_deps": ["@playwright/test", "playwright"]
+    },
+    {
+      "plugin": "stagehand",
+      "package_deps": ["@browserbasehq/stagehand"]
+    },
+    {
+      "plugin": "chrome-devtools-mcp",
+      "file_extensions": [".html", ".css", ".scss"],
+      "config_files": ["playwright.config.ts"]
+    },
+    {
+      "plugin": "firebase",
+      "config_files": ["firebase.json", ".firebaserc"],
+      "package_deps": ["firebase", "firebase-admin", "firebase-functions"]
+    },
+    {
+      "plugin": "supabase",
+      "config_files": ["supabase/config.toml"],
+      "package_deps": ["@supabase/supabase-js", "supabase"]
+    },
+    {
+      "plugin": "terraform",
+      "file_extensions": [".tf", ".tfvars"],
+      "config_files": [".terraform.lock.hcl"]
+    },
+    {
+      "plugin": "prisma",
+      "config_files": ["prisma/schema.prisma"],
+      "package_deps": ["prisma", "@prisma/client"]
+    },
+    {
+      "plugin": "mongodb",
+      "package_deps": ["mongodb", "mongoose", "pymongo", "motor"]
+    },
+    {
+      "plugin": "vercel",
+      "config_files": ["vercel.json", ".vercel"],
+      "package_deps": ["vercel"]
+    },
+    {
+      "plugin": "netlify-skills",
+      "config_files": ["netlify.toml"]
+    },
+    {
+      "plugin": "stripe",
+      "package_deps": ["stripe", "@stripe/stripe-js"]
+    },
+    {
+      "plugin": "sentry",
+      "package_deps": ["@sentry/node", "@sentry/browser", "@sentry/react", "sentry-sdk"]
+    },
+    {
+      "plugin": "posthog",
+      "package_deps": ["posthog-js", "posthog-node", "posthog"]
+    },
+    {
+      "plugin": "slack",
+      "package_deps": ["@slack/bolt", "@slack/web-api"]
+    },
+    {
+      "plugin": "discord",
+      "package_deps": ["discord.js"]
+    },
+    {
+      "plugin": "figma",
+      "config_files": ["figma.config.json"],
+      "package_deps": ["@figma/plugin-typings"]
+    },
+    {
+      "plugin": "notion",
+      "package_deps": ["@notionhq/client"]
+    },
+    {
+      "plugin": "linear",
+      "package_deps": ["@linear/sdk"]
+    },
+    {
+      "plugin": "wix",
+      "config_files": ["wix.config.json"]
+    },
+    {
+      "plugin": "wordpress.com",
+      "config_files": ["wp-config.php", "style.css"],
+      "file_extensions": [".php"]
+    },
+    {
+      "plugin": "aws-serverless",
+      "config_files": ["template.yaml", "template.yml", "samconfig.toml"],
+      "package_deps": ["aws-sdk", "@aws-sdk/client-s3", "boto3"]
+    },
+    {
+      "plugin": "deploy-on-aws",
+      "config_files": ["cdk.json", "template.yaml"],
+      "package_deps": ["aws-cdk-lib"]
+    },
+    {
+      "plugin": "cockroachdb",
+      "package_deps": ["pg", "cockroachdb"]
+    },
+    {
+      "plugin": "planetscale",
+      "package_deps": ["@planetscale/database"]
+    },
+    {
+      "plugin": "neon",
+      "package_deps": ["@neondatabase/serverless"]
+    },
+    {
+      "plugin": "pinecone",
+      "package_deps": ["@pinecone-database/pinecone", "pinecone-client"]
+    },
+    {
+      "plugin": "coderabbit",
+      "config_files": [".coderabbit.yaml"]
+    },
+    {
+      "plugin": "semgrep",
+      "config_files": [".semgrep.yml", ".semgrepignore"]
+    },
+    {
+      "plugin": "postman",
+      "config_files": ["postman_collection.json"]
+    },
+    {
+      "plugin": "huggingface-skills",
+      "package_deps": ["transformers", "huggingface_hub", "@huggingface/inference"]
+    },
+    {
+      "plugin": "laravel-boost",
+      "config_files": ["artisan"],
+      "file_extensions": [".blade.php"]
+    },
+    {
+      "plugin": "frontend-design",
+      "file_extensions": [".tsx", ".jsx", ".vue", ".svelte"],
+      "package_deps": ["react", "vue", "svelte", "next", "nuxt"]
+    },
+    {
+      "plugin": "explanatory-output-style",
+      "_manual": true,
+      "_description": "输出风格插件，按需手动启用"
+    },
+    {
+      "plugin": "learning-output-style",
+      "_manual": true,
+      "_description": "学习模式插件，按需手动启用"
+    }
+  ]
+}
